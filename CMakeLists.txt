@@ -11,4 +11,4 @@ set(HEADERS imconfig.h imgui.h imgui_internal.h imstb_rectpack.h imstb_textedit.
         imstb_truetype.h)
 
 add_library(imgui-static STATIC ${SOURCES} ${HEADERS})
-target_include_directories(.)
+target_include_directories(imgui-static PUBLIC .)
