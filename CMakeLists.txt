@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(Imgui VERSION 1.0)
+project(Imgui VERSION 1.89)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
