@@ -22,7 +22,9 @@ if (IMGUI_USE_OPENGL3)
     List(APPEND HEADERS  backends/imgui_impl_opengl3.h)
 endif()
 add_library(imgui-static STATIC ${SOURCES} ${HEADERS})
-target_include_directories(imgui-static PUBLIC .)
+target_include_directories(imgui-static
+        PUBLIC .
+        PUBLIC backends)
 if (IMGUI_USE_SDL)
     target_link_libraries(imgui-static PRIVATE SDL2::SDL2-static)
 endif()
